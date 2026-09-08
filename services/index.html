@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes & Services — Firefly Art Glass, Elkhorn WI</title>
+<meta name="description" content="Glass art classes, private parties, team building, and open studio at Firefly Art Glass in Elkhorn, WI. Fused, stained, and mosaic glass for all skill levels.">
+<link rel="canonical" href="https://fireflyartglass.com/services/">
+<style>
+  .skip-link { position:absolute; transform:translateY(-100%); background:#13503a; color:white; padding:8px 16px; font-size:14px; font-weight:700; z-index:9999; border-radius:0 0 8px 0; }
+  .skip-link:focus { transform:translateY(0); }
+  *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
+  :root {
+    --teal: #13503a; --teal-mid: #1a6b4a; --teal-light: #d1fae5;
+    --amber: #c05621; --amber-warm: #dd6b20; --purple: #553c9a;
+    --gold: #b7791f; --text: #1a202c; --muted: #4a5568; --subtle: #718096;
+    --border: #e2e8f0; --bg: #fff; --cream: #fffbf5;
+  }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color:var(--text); background:var(--bg); line-height:1.5; }
+  :focus-visible { outline:3px solid #553c9a; outline-offset:2px; border-radius:2px; }
+  nav { background:var(--teal); padding:0 40px; display:flex; align-items:center; justify-content:space-between; height:64px; position:sticky; top:0; z-index:999; }
+  .nav-brand { color:white; font-size:19px; font-weight:800; letter-spacing:-0.3px; text-decoration:none; }
+  .nav-brand .fire { color:#fb923c; }
+  .nav-links { display:flex; gap:24px; list-style:none; }
+  .nav-links a { color:rgba(255,255,255,0.9); text-decoration:none; font-size:14px; padding:4px 2px; border-bottom:2px solid transparent; }
+  .nav-links a:hover, .nav-links a:focus-visible { border-bottom-color:#fbbf24; color:white; outline:none; }
+  .nav-cta { background:#c05621; color:white; padding:9px 18px; border-radius:8px; font-size:14px; font-weight:700; text-decoration:none; }
+  .nav-cta:hover { background:#dd6b20; }
+  .btn-amber { background:#c05621; color:white; padding:14px 26px; border-radius:8px; font-size:15px; font-weight:700; text-decoration:none; display:inline-block; }
+  .btn-amber:hover { background:#dd6b20; }
+  .btn-ghost-teal { border:2px solid var(--teal); color:var(--teal); padding:13px 26px; border-radius:8px; font-size:15px; text-decoration:none; display:inline-block; font-weight:600; }
+  .btn-ghost-teal:hover { background:var(--teal); color:white; }
+  .btn-ghost-white { border:2px solid rgba(255,255,255,0.5); color:white; padding:13px 26px; border-radius:8px; font-size:15px; text-decoration:none; display:inline-block; }
+  .btn-ghost-white:hover { border-color:white; background:rgba(255,255,255,0.1); }
+  .section-kicker { font-size:11px; font-weight:700; letter-spacing:3px; text-transform:uppercase; color:var(--teal); margin-bottom:8px; }
+  .section-heading { font-size:36px; font-weight:800; color:var(--text); margin-bottom:12px; letter-spacing:-0.5px; }
+  .section-sub { font-size:16px; color:var(--muted); line-height:1.7; margin-bottom:48px; max-width:560px; }
+  footer { background:#0a2a1e; color:rgba(255,255,255,0.6); padding:24px 40px; }
+  .footer-inner { max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap; }
+  footer strong { color:white; }
+  .footer-hours { font-size:12px; color:rgba(255,255,255,0.5); }
+  @media (max-width:768px) {
+    nav { padding:0 20px; }
+    .nav-links { display:none; }
+    footer { padding:20px; }
+    .footer-inner { flex-direction:column; text-align:center; }
+  }
+</style>
+<style>
+  .page-hero { background:var(--teal); padding:72px 40px; }
+  .page-hero-inner { max-width:1100px; margin:0 auto; }
+  .page-hero h1 { font-size:44px; font-weight:900; color:white; letter-spacing:-1px; margin-bottom:14px; }
+  .page-hero p { font-size:18px; color:rgba(255,255,255,0.85); line-height:1.7; max-width:600px; }
+  .services-body { max-width:1100px; margin:0 auto; padding:64px 40px; }
+  .services-intro { font-size:17px; color:var(--muted); line-height:1.8; margin-bottom:56px; max-width:700px; }
+  .services-section { margin-bottom:64px; }
+  .services-section h2 { font-size:28px; font-weight:800; margin-bottom:8px; letter-spacing:-0.5px; }
+  .services-section .sub { font-size:15px; color:var(--muted); margin-bottom:32px; line-height:1.6; }
+  .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .service-card { border-radius:12px; padding:28px; border:1px solid var(--border); box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+  .service-card.featured { background:var(--teal); color:white; border-color:var(--teal); }
+  .service-card.featured .s-name { color:white; } .service-card.featured .s-desc { color:rgba(255,255,255,0.85); }
+  .service-card.featured .s-tag { color:#86efac; }
+  .s-icon { font-size:32px; margin-bottom:14px; }
+  .s-tag { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:2px; color:var(--teal); margin-bottom:8px; display:block; }
+  .s-name { font-size:19px; font-weight:800; color:var(--text); margin-bottom:8px; }
+  .s-desc { font-size:14px; color:var(--muted); line-height:1.65; }
+  .parties-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+  .party-card { border-radius:12px; overflow:hidden; border:1px solid var(--border); box-shadow:0 1px 3px rgba(0,0,0,0.05); }
+  .party-img { height:80px; display:flex; align-items:center; justify-content:center; font-size:36px; }
+  .party-img.birthday { background:linear-gradient(135deg,#fce7f3,#fbcfe8); }
+  .party-img.corporate { background:linear-gradient(135deg,#dbeafe,#bfdbfe); }
+  .party-img.social { background:linear-gradient(135deg,#d1fae5,#a7f3d0); }
+  .party-body { padding:20px; }
+  .party-tag { font-size:11px; font-weight:700; text-transform:uppercase; letter-spacing:1px; margin-bottom:6px; display:block; }
+  .party-tag.birthday { color:#be185d; } .party-tag.corporate { color:#1d4ed8; } .party-tag.social { color:#065f46; }
+  .party-name { font-size:17px; font-weight:800; color:var(--text); margin-bottom:8px; }
+  .party-desc { font-size:13px; color:var(--muted); line-height:1.65; }
+  .cta-band { background:var(--cream); border-top:1px solid #fed7aa; padding:56px 40px; text-align:center; }
+  .cta-band h2 { font-size:32px; font-weight:800; margin-bottom:12px; }
+  .cta-band p { font-size:16px; color:var(--muted); margin-bottom:28px; }
+  .cta-actions { display:flex; gap:16px; justify-content:center; flex-wrap:wrap; }
+  @media (max-width:768px) {
+    .page-hero { padding:48px 20px; } .page-hero h1 { font-size:32px; }
+    .services-body { padding:40px 20px; } .services-grid, .parties-grid { grid-template-columns:1fr; }
+    .cta-band { padding:40px 20px; }
+  }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<header>
+  <nav role="navigation" aria-label="Main navigation">
+    <a href="/" class="nav-brand" aria-label="Firefly Art Glass home"><span class="fire">Firefly</span> Art Glass</a>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <a href="/contact/" class="nav-cta">Book an Event</a>
+  </nav>
+</header>
+<main id="main-content">
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <h1>Classes & Services</h1>
+      <p>Three glass crafts, private parties, team events, and open studio time — all taught by Debbie. No experience needed.</p>
+    </div>
+  </section>
+  <div class="services-body">
+    <p class="services-intro">Every class is hands-on from the moment you sit down. Debbie guides your project — offers ideas, shows you techniques, keeps you from common mistakes — but the work is yours. You leave with something you actually made.</p>
+    <div class="services-section">
+      <h2>Glass Art Classes</h2>
+      <p class="sub">All levels welcome. Drop-ins available. Call ahead for custom projects.</p>
+      <div class="services-grid">
+        <div class="service-card featured">
+          <div class="s-icon" aria-hidden="true">🔥</div>
+          <span class="s-tag">Most Popular</span>
+          <div class="s-name">Fused Glass</div>
+          <p class="s-desc">Layer pieces of colored glass and fire them in the kiln. Make plates, bowls, ornaments, suncatchers, and art panels. Debbie's specialty — the class most people book twice.</p>
+        </div>
+        <div class="service-card">
+          <div class="s-icon" aria-hidden="true">🪟</div>
+          <span class="s-tag">Traditional Craft</span>
+          <div class="s-name">Stained Glass</div>
+          <p class="s-desc">Learn to cut and solder glass into panels and suncatchers. A meditative skill with beautiful results. Debbie teaches the full process from cutting to soldering.</p>
+        </div>
+        <div class="service-card">
+          <div class="s-icon" aria-hidden="true">🪄</div>
+          <span class="s-tag">No Cutting Required</span>
+          <div class="s-name">Mosaic Glass</div>
+          <p class="s-desc">Arrange glass pieces on mirrors, frames, and objects. Endless color combinations. A great entry point if you want to work with glass without cutting.</p>
+        </div>
+        <div class="service-card">
+          <div class="s-icon" aria-hidden="true">📖</div>
+          <span class="s-tag">Walk-In Welcome</span>
+          <div class="s-name">Open Studio</div>
+          <p class="s-desc">No appointment needed during open hours. Pick a project from the available options and create at your own pace. Perfect for a solo afternoon or a spontaneous outing.</p>
+        </div>
+        <div class="service-card">
+          <div class="s-icon" aria-hidden="true">🛍️</div>
+          <span class="s-tag">For Sale In-Studio</span>
+          <div class="s-name">Handcrafted Gifts</div>
+          <p class="s-desc">Glass bowls, ornaments, panels, and sculptures made in-studio. Nothing mass-produced. Every piece is made by hand — by Debbie or by a student.</p>
+        </div>
+      </div>
+    </div>
+    <div class="services-section">
+      <h2>Group Events & Parties</h2>
+      <p class="sub">Book the studio exclusively for your group. Everyone creates their own piece to take home.</p>
+      <div class="parties-grid">
+        <article class="party-card">
+          <div class="party-img birthday" aria-hidden="true">🎂</div>
+          <div class="party-body">
+            <span class="party-tag birthday">Private Party</span>
+            <h3 class="party-name">Birthday & Bachelorette</h3>
+            <p class="party-desc">Celebrate in a creative space. Any group size. Everyone leaves with something they made — no two pieces are alike.</p>
+          </div>
+        </article>
+        <article class="party-card">
+          <div class="party-img corporate" aria-hidden="true">💼</div>
+          <div class="party-body">
+            <span class="party-tag corporate">Corporate</span>
+            <h3 class="party-name">Team Building</h3>
+            <p class="party-desc">A hands-on experience away from screens and conference rooms. Teams work alongside each other — creative, low-key, actually fun.</p>
+          </div>
+        </article>
+        <article class="party-card">
+          <div class="party-img social" aria-hidden="true">🌿</div>
+          <div class="party-body">
+            <span class="party-tag social">Date Night / Family</span>
+            <h3 class="party-name">Creative Night Out</h3>
+            <p class="party-desc">Date nights, family outings, and friend get-togethers. Thursday evenings are open until 8pm — perfect for after-dinner plans.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  <div class="cta-band">
+    <h2>Ready to Book?</h2>
+    <p>Call or email Debbie to reserve your class or party. No online booking system — she prefers to talk through what you want.</p>
+    <div class="cta-actions">
+      <a href="/contact/" class="btn-amber">Get in Touch</a>
+      <a href="/about/" class="btn-ghost-teal">Learn About the Studio</a>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="footer-inner">
+    <div>
+      <strong>Firefly Art Glass, LLC & DIY Studio</strong> · 13 S. Wisconsin St, Elkhorn, WI 53121<br>
+      <span class="footer-hours">Wed–Fri 10am–5pm · Thu until 8pm · Sat 10am–2pm · Closed Sun–Tue</span>
+    </div>
+    <div style="font-size:11px;color:rgba(255,255,255,0.35);">
+      Site by <a href="https://deneckemedia.co" style="color:rgba(255,255,255,0.5);text-decoration:none;" target="_blank" rel="noopener">Denecke Media</a> · © 2026 Firefly Art Glass, LLC & DIY Studio
+    </div>
+  </div>
+</footer>
+</body>
+</html>
